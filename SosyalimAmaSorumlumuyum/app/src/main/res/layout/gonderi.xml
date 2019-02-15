@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLyt"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TARIH"
+        android:layout_alignBaseline="@+id/kullanici"
+        android:layout_alignBottom="@+id/kullanici"
+        android:layout_alignEnd="@+id/il" />
+
+    <TextView
+        android:id="@+id/kullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KULLANICI"
+        android:layout_below="@+id/telefon"
+        android:layout_alignStart="@+id/telefon"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#EE0000"
+        android:maxWidth="220dp"
+        android:maxLines="2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/aciklamatag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Açıklama:"
+        android:layout_below="@+id/baslik"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/aciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aciklamatag"
+        android:layout_alignStart="@+id/aciklamatag"
+        android:scrollbars="vertical"
+        android:maxLines="3"
+        android:maxWidth="250dp" />
+
+    <TextView
+        android:id="@+id/adrestag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adres:"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/aciklama"
+        android:layout_alignStart="@+id/aciklama" />
+
+    <TextView
+        android:id="@+id/adres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adrestag"
+        android:layout_below="@+id/adrestag"
+        android:scrollbars="vertical"
+        android:maxLines="2"
+        android:maxWidth="200dp" />
+
+    <TextView
+        android:id="@+id/il"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/telefontag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon No:"
+        android:textStyle="bold"
+        android:layout_below="@+id/adres"
+        android:layout_alignStart="@+id/adres"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/telefontag"
+        android:layout_below="@+id/telefontag" />
+
+
+</RelativeLayout>

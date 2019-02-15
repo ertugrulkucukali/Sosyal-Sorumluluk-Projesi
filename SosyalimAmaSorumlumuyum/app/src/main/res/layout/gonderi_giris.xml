@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/relativeLytGiris"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/baslikGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="BAŞLIK BİLGİSİ BURAYA GİRİLECEK"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#EE0000"
+        android:maxWidth="220dp"
+        android:maxLines="2"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/iltagGiris" />
+
+    <TextView
+        android:id="@+id/aciklamatagGiris"
+        android:text="Açıklama:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/baslikGiris"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/aciklamaGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aciklamatagGiris"
+        android:layout_alignStart="@+id/aciklamatagGiris"
+        android:scrollbars="vertical"
+        android:maxLines="3"
+        android:maxWidth="250dp"
+        android:hint="Açıklama" />
+
+    <TextView
+        android:id="@+id/adrestagGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adres:"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/aciklamaGiris"
+        android:layout_alignStart="@+id/aciklamaGiris" />
+
+    <EditText
+        android:id="@+id/adresGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/adrestagGiris"
+        android:layout_below="@+id/adrestagGiris"
+        android:maxLines="2"
+        android:maxWidth="200dp"
+        android:scrollbars="vertical"
+        android:hint="Yardımın Ulaşacağı Adres" />
+
+    <TextView
+        android:id="@+id/iltagGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İl:"
+        android:textStyle="bold"
+        android:layout_below="@+id/telefonGiris"
+        android:layout_alignStart="@+id/telefonGiris"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/ilGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="İl Bilgisi Giriniz"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/iltagGiris"
+        android:layout_alignStart="@+id/iltagGiris" />
+
+    <TextView
+        android:id="@+id/telefontagGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon No:"
+        android:textStyle="bold"
+        android:layout_below="@+id/adresGiris"
+        android:layout_alignStart="@+id/adresGiris"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/telefonGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/telefontagGiris"
+        android:layout_below="@+id/telefontagGiris"
+        android:hint="Yardım İçin Telefon Numarası Giriniz" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
